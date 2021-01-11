@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TesteArquitetura</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Continuar</string>
+
+    <string name="add_email">Adicione um email</string>
+    <string name="add_phone">Adicione um telefone</string>
+    <string name="add">Adicionar</string>
+    <string name="edit_enmail">Editar email</string>
+    <string name="edit_phone">Editar telefone</string>
+    <string name="phone_empty">(00) 00000 - 0000</string>
+    <string name="email_empty">seuemail@email.com</string>
+</resources>
