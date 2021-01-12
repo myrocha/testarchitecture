@@ -21,26 +21,11 @@ class ContactView @JvmOverloads constructor(
 
     fun bind(contactVO: ContactVO) {
         binding.tvName.text = contactVO.firstName
-
-        if (contactVO.hasEmail) {
-            binding.tvEmail.text = contactVO.email
-            binding.btnAddEmail.text = resources.getString(R.string.edit_enmail)
-
-        } else {
-            binding.tvEmail.text = resources.getString(R.string.email_empty)
-            binding.btnAddEmail.text = resources.getString(R.string.add_email)
-        }
-
-        if (contactVO.hasPhone) {
-            binding.tvPhone.text = contactVO.phone
-            binding.btnAddPhone.text = resources.getString(R.string.edit_phone)
-
-        } else {
-            binding.tvPhone.text = resources.getString(R.string.phone_empty)
-            binding.btnAddPhone.text = resources.getString(R.string.add_phone)
-        }
+        binding.tvEmail.text = contactVO.email
+        binding.btnAddEmail.text = resources.getString(R.string.edit_enmail)
+        binding.tvPhone.text = contactVO.phone
+        binding.btnAddPhone.text = resources.getString(R.string.edit_phone)
         binding.tvAge.text = contactVO.age
-
         binding.btnIsContinue.isEnabled = contactVO.enableContinueButton
 
         showViews()

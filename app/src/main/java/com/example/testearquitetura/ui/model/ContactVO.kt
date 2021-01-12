@@ -4,8 +4,8 @@ class ContactVO(
     val firstName: String,
     val age: String,
     val email: String?,
-    val hasEmail: Boolean,
     val phone: String?,
-    val hasPhone: Boolean,
+    val textBtnEmail: String,
+    val textBtnPhone: String,
     val enableContinueButton: Boolean
 )
