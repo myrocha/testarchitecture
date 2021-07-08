@@ -10,6 +10,7 @@ import org.koin.dsl.module
 
 val contactModule = module {
 
+
     viewModel {
         ContactViewModel(
             get(),
@@ -17,11 +18,13 @@ val contactModule = module {
         )
     }
 
+
     factory<ContactRepository> {
         ContactRepositoryImpl(
             get()
         )
     }
+
 
     factory { ContactMapper() }
     factory { ContactMapperVO() }
